@@ -1,0 +1,28 @@
+.cabeçalho__menu-quadriculas{
+    width: 60px;
+    height: 60px;
+    background-image: url("icon");
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+}
+.cabeçalho{
+    background-color: var(--cor-do-menu);
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 80%;
+}
+.container__botao:checked~.lista-menu{
+    display: block;
+}
